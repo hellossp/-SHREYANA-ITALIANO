@@ -8,10 +8,12 @@ import { ReviewsSection } from '@/components/ReviewsSection';
 import { LocationContact } from '@/components/LocationContact';
 import { CartDrawer } from '@/components/CartDrawer';
 import { Footer } from '@/components/Footer';
+import { DisclaimerModal } from '@/components/DisclaimerModal';
 
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-[#120806] text-[#F6EDE0] relative overflow-hidden">
+      <DisclaimerModal />
       <Navbar />
       <Hero />
       <MenuSection />
