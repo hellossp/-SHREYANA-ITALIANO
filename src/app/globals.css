@@ -1,0 +1,51 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+
+:root {
+  --font-display: 'Playfair Display', serif;
+  --font-sans: 'Outfit', sans-serif;
+  --font-handwriting: 'Caveat', cursive;
+}
+
+body {
+  background-color: #120806;
+  color: #F6EDE0;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  selection-background-color: #D97736;
+  selection-color: #ffffff;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #120806;
+}
+::-webkit-scrollbar-thumb {
+  background: #D97736;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F48D46;
+}
+
+/* Card Styling - Clean Solid Matte Luxury */
+.ratatouille-card {
+  background: #1A0C09;
+  border: 1px solid rgba(217, 119, 54, 0.2);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.ratatouille-card:hover {
+  border-color: rgba(217, 119, 54, 0.45);
+}
+
+.parchment-badge {
+  background: #1C0D0A;
+  border: 1px solid rgba(217, 119, 54, 0.25);
+}
